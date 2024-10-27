@@ -1,6 +1,6 @@
 # Fake-News-Detection
 ## INRODUCTION:
-    The spreading of fake news causes many problems in the society. It easily deceives people and leads to confusion among them. It has the ability to cause a lot of social and national damage with destructive impacts. Sometimes it gets very difficult to know if the news is genuine or fake. Therefore it is very necessary to detect if the news is fake or not. Through this project we will be detecting whether the news is fake, unreliable or not by using certain Natural Language Processing Techniques (NLP).
+The spreading of fake news causes many problems in the society. It easily deceives people and leads to confusion among them. It has the ability to cause a lot of social and national damage with destructive impacts. Sometimes it gets very difficult to know if the news is genuine or fake. Therefore it is very necessary to detect if the news is fake or not. Through this project we will be detecting whether the news is fake, unreliable or not by using certain Natural Language Processing Techniques (NLP).
      
 ## PROJECT OVERVIEW:
 - The ultimatum of this project is to accurately distinguish the news available on the internet being genuine and true or being fake and unreliable.
@@ -10,7 +10,7 @@
 - The prominent reason why we have used NLP technique is that because NLP algorithms can ascertain the intention and any biases of an author by analyzing the emotions displayed in the news.
 
 ## DESIGN THINKING
-    The approach to solving this problem can be classified into several phases, each with specific objectives and tasks. This structured approach will ensure that we systematically address all aspects of the problem.
+The approach to solving this problem can be classified into several phases, each with specific objectives and tasks. This structured approach will ensure that we systematically address all aspects of the problem.
 ### These phases will include:
 1.	Acquiring Data from Data Source
 2.	Data preprocessing
@@ -88,4 +88,4 @@ Here we have used:
 10.4)	ROC-AUC Curve - An ROC curve (receiver operating characteristic curve) is a graph showing the performance of a classification model at all classification thresholds and AUC stands for "Area under the ROC Curve." That is, AUC measures the entire two-dimensional area underneath the entire ROC curve (think integral calculus) from (0,0) to (1,1).
 
 ## CONCLUSION:
-    In conclusion, the use of Natural Language Processing (NLP) and Long Short-Term Memory (LSTM) networks for fake news detection represents a significant step forward in combating the proliferation of false information in our digital age. Through the application of these advanced technologies, We can achieve more accurate and efficient identification of deceptive content within news articles, social media posts, and various online sources. 
+In conclusion, the use of Natural Language Processing (NLP) and Long Short-Term Memory (LSTM) networks for fake news detection represents a significant step forward in combating the proliferation of false information in our digital age. Through the application of these advanced technologies, We can achieve more accurate and efficient identification of deceptive content within news articles, social media posts, and various online sources. 
