@@ -35,13 +35,12 @@ I have obtained the datasets from “Kaggle” that contains the list of article
 The link for the dataset is : [https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset]
 
 ## Step 2- DATA PRPEPROCESSING:
-Cleaning process initially involved the assigning of the labels to Fake and True news datasets.
-We have assigned “F” label for the Fake news and “T” label for the True news 
-It involves checking for null values, lowercasing all the text, removing all special characters and stopwords.
+- Cleaning process initially involved the assigning of the labels to Fake and True news datasets.
+- I have assigned “F” label for the Fake news and “T” label for the True news 
+- It involves checking for null values, lowercasing all the text, removing all special characters and stopwords.
 
 ## Step 3- FEATURE ENGINEERING:
-Feature Engineering is the process of taking raw data and transforming them into certain features that help in creating a predictive model using standard modelling methods.
-It is also a form of Exploratory Data Analysis.
+Feature Engineering is the process of taking raw data and transforming them into certain features that help in creating a predictive model using standard modelling methods. It is also a form of Exploratory Data Analysis.
 This includes :
 3.1)	Highlighting the features of dataset
 3.2)	N-Gram Analysis (Unigram, Bigram)
@@ -49,7 +48,7 @@ This includes :
 
 ## step 4- TEXT PREPROCESSING:
 In the context of LSTM developing the models for natural language processing (NLP) tasks like fake news detection, text preprocessing plays a vital role. 	Then we have performed Stemming. 
-Stemming is a method of deriving root word from the inflected word. Here we extract the reviews and convert the words in reviews to its root word. For example, Going -> go, Finally -> fina
+Stemming is a method of deriving root word from the inflected word. Here I extracted the reviews and convert the words in reviews to its root word. For example, Going -> go, Finally -> fina
 
 ## Step 5- FEATURE EXTRACTION:
 In the context of developing the models for natural language processing (NLP) tasks like fake news detection, feature extraction primarily involves converting textual data into numerical representations that can be fed into the model. Using train test split function we are splitting the dataset into 80:20 ratio for train and test set respectively 
@@ -59,33 +58,32 @@ It involves 3 steps namely:
 5.3) Padding
 
 ## Step 6- MODEL SELECTION:
-We should select a suitable classification algorithm (e.g., Logistic Regression, Random Forest, or Neural Networks) for the fake news detection task.
-Among the classification algorithms, we have chosen the LSTM (Long Short Term Memory) for building the model.
-LSTM (Long Short Term Memory) which helps in containing sequence information.
-Long Short-Term Memory (LSTM) networks are a type of recurrent neural network capable of learning order dependence in sequence prediction problems. 
+- We should select a suitable classification algorithm (e.g., Logistic Regression, Random Forest, or Neural Networks) for the fake news detection task.
+- Among the classification algorithms, I have chosen the LSTM (Long Short Term Memory) for building the model.
+- LSTM (Long Short Term Memory) which helps in containing sequence information.
+- Long Short-Term Memory (LSTM) networks are a type of recurrent neural network capable of learning order dependence in sequence prediction problems. 
 
 ## Step 7- MODEL BUILDING:
-At first we are going to develop the base model and compile it. 
-First layer will be the embedding layer which has the input of vocabulary size, vector features and sentence length. 
-Later we add 30% dropout layer to prevent over-fitting and the LSTM layer which has100 neurons in the layer.
-In final layer we use sigmoid activation function. Later we compile the model using adam optimizer and binary cross entropy as loss function since we have only two outputs.
+- At first we are going to develop the base model and compile it. 
+- First layer will be the embedding layer which has the input of vocabulary size, vector features and sentence length. 
+- Later we add 30% dropout layer to prevent over-fitting and the LSTM layer which has100 neurons in the layer.
+- In final layer we use sigmoid activation function. Later we compile the model using adam optimizer and binary cross entropy as loss function since we have only two outputs.
 
 ## Step 8- MODEL FITTING:
-Before fitting to the model, we considered the padded embedded object as X and y as y itself and have converted them into an array.
+- Before fitting to the model, I considered the padded embedded object as X and y as y itself and have converted them into an array.
 
 ## Step 9- MODEL TRAIINING:
-We have split our new X and y variable into train and test and proceed with fitting the model to the data. We have considered 10 epochs and 128 as batch size. 
-The number of epochs and batch size can be varied to get better results.
+- I have split our new X and y variable into train and test and proceed with fitting the model to the data. I have considered 10 epochs and 128 as batch size. The number of epochs and batch size can be varied to get better results.
 
 ## Step 10- MODEL EVALAUTION:
-Evaluation metrics are used to measure the quality of the statistical or machine learning model. 
-Evaluating machine learning models or algorithms is essential for any project. 
+- Evaluation metrics are used to measure the quality of the statistical or machine learning model. 
+- Evaluating machine learning models or algorithms is essential for any project. 
 There are many different types of evaluation metrics available to test a model. 
 Here we have used:
-10.1)	Confusion Matrix - 	It is a table that is used in classification problems to assess where errors in the model were made.
-10.2)	Accuracy - Accuracy measures how often the model is correct.
-10.3)	Classification Report - the summary of the quality of classification made by the constructed ML model that comprises mainly 5 columns and (N+3) rows. 
-10.4)	ROC-AUC Curve - An ROC curve (receiver operating characteristic curve) is a graph showing the performance of a classification model at all classification thresholds and AUC stands for "Area under the ROC Curve." That is, AUC measures the entire two-dimensional area underneath the entire ROC curve (think integral calculus) from (0,0) to (1,1).
+- 10.1) Confusion Matrix - It is a table that is used in classification problems to assess where errors in the model were made.
+- 10.2) Accuracy - Accuracy measures how often the model is correct.
+- 10.3) Classification Report - the summary of the quality of classification made by the constructed ML model that comprises mainly 5 columns and (N+3) rows. 
+- 10.4) ROC-AUC Curve - An ROC curve (receiver operating characteristic curve) is a graph showing the performance of a classification model at all classification thresholds and AUC stands for "Area under the ROC Curve." That is, AUC measures the entire two-dimensional area underneath the entire ROC curve (think integral calculus) from (0,0) to (1,1).
 
 ## CONCLUSION:
 In conclusion, the use of Natural Language Processing (NLP) and Long Short-Term Memory (LSTM) networks for fake news detection represents a significant step forward in combating the proliferation of false information in our digital age. Through the application of these advanced technologies, We can achieve more accurate and efficient identification of deceptive content within news articles, social media posts, and various online sources. 
